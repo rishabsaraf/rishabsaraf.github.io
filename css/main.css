@@ -3,6 +3,10 @@
 	margin: 0px;
 }
 
+a {
+	text-decoration: none;
+}
+
 #social {
 	position: fixed;
 	width: 60px;
