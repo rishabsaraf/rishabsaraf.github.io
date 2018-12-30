@@ -8,14 +8,14 @@ function showLessJobs() {
 	show('showMoreJobs');
 	hide('showLessJobs');
 	hideAll('moreJob');
-	document.getElementById('jobs').scrollIntoView();
+	// document.getElementById('jobs').scrollIntoView();
 }
 
 function showMoreJobs() {
 	show('showLessJobs');
 	hide('showMoreJobs');
 	showAll('moreJob');
-	document.getElementsByClassName('moreJob')[0].scrollIntoView();
+	// document.getElementsByClassName('moreJob')[0].scrollIntoView();
 }
 
 
