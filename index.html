@@ -1,86 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-	<title>Rishab</title>
+<title>Rishab Saraf</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-	<!--Start if css-->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/mediaQuery.css">
-	<!--End of css-->
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-	<!--Start of JavaScript-->
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
     
-    <!--Angular import-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/controller/mainController.js"></script>
-	
-
-    <!--Start of script for google analytics-->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-77165205-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	<!--End of script for google analytics-->
-	<!--Start of JavaScript-->
-
-</head>
-<body ng-app="rishab" ng-controller="mainController">
-	
-	<!---Start of fixed social sidebar-->
-    <div id="social">
-    	<a href="https://www.facebook.com/rishabsaraf93" target="_blank">
-    		<div id="fb">f</div>
-    	</a>
-    	<a href="https://plus.google.com/+RishabSaraf" target="_blank">
-    		<div id="google">g+</div>
-    	</a>
-    	<a href="https://www.linkedin.com/in/rishabsaraf93" target="_blank">
-    		<div id="linkedIn">in</div>
-    	</a>
-    	<a href="https://twitter.com/Rishab_Saraf" target="_blank">
-    		<div id="twitter">t</div>
-    	</a>
-    </div>
-    <!--End of fixed social sidebar-->
-
-    <!--Start of header-->
-    <div id="header">
-    	<div id="pageHeading">
-    		Rishab Saraf
-    	</div>
-    	
-    	<!--Start of navigation links-->
-    	<div id="nav">
-	    	<a href=""><div class="headerLink" ng-click="setContentType('contact')" ng-class="{'active-nav':contentType=='contact'}">
-	    		Contact Me
-	    	</div></a>
-	    	<div class="headerLink" ng-click="setContentType('about')" ng-class="{'active-nav':contentType=='about'}">
-	    		About Me
-	    	</div>
-    	</div>
-    	<!--End of navigation links-->
-
-    </div>
-    <!--End of header-->
-
-    <div class="mainDiv">
-        <div ng-if="contentType=='contact'">
-            call me
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/profile.jpg" style="width:100%" alt="Rishab">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Rishab Saraf</h2>
+          </div>
         </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Seattle, USA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>rishabsaraf93@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 206 307 4618</p>
+          <hr>
 
-        <div ng-if="contentType=='about'">
-            Myself, Rishab Saraf<br/>
-            I am from Kathmandu, Nepal<br/>
-            I live in Gurgaon, India<br/>
-            I work as a Software Development Engineer @ Amazon.com
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <br>
+          <hr>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Hindi</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <br>
         </div>
+      </div><br>
+
+    <!-- End Left Column -->
     </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Development Engineer II / Amazon Web Services</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Working with AWS Identity...</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Development Engineer II / Alexa - Smart Home (Amazon) </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - Dec 2018</h6>
+          <p>Worked with Alexa Smart Home Team on the design and development of the new Smart Home v4 APIs. Single-handedly designed and developed a new micro-service to manage localizable assets for the launch of Primitive APIs.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Development Engineer II / Amazon Merchant Technologies</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017 - May 2018</h6>
+          <p>Worked with Merchant Technologies Team. Single-handedly worked on adding multi factor authentication in seller central. Designed and implemented a customizable MFA (or 2SV) experience. Also designed Continuous deployment for Seller Registration Systems.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Development Engineer / Amazon Merchant Technologies</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2015 - Jun 2017</h6>
+          <p>Worked with Merchant Technologies Team on the development of a dynamic, configuration-based framework for data collection. The framework was based on Spring MVC and used Angular JS for client side rendering. Single-handedly worked on the development of the seller registration pipeline for Amazon Fresh for Japan. Single-handedly designed and implemented the v1 of Seller Identity Verification system.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Delhi Technological University</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2015</h6>
+          <p>Bachelor Degree in Information Technology</p>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media</p>
+  <a href="https://twitter.com/Rishab_Saraf" class="anchorNoStyle" target="_blank">
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/rishabsaraf93/" class="anchorNoStyle" target="_blank">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </a>
+  <br/><br/>
+</footer>
+
 </body>
 </html>
