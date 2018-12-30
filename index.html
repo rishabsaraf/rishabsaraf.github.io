@@ -7,10 +7,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/main.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-light-grey" onLoad="resetPage()">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -69,7 +70,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 id="jobs" class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Development Engineer II / Amazon Web Services</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
@@ -82,16 +83,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p>Worked with Alexa Smart Home Team on the design and development of the new Smart Home v4 APIs. Single-handedly designed and developed a new micro-service to manage localizable assets for the launch of Primitive APIs.</p>
           <hr>
         </div>
-        <div class="w3-container">
+        <div class="w3-container moreJob">
           <h5 class="w3-opacity"><b>Software Development Engineer II / Amazon Merchant Technologies</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017 - May 2018</h6>
           <p>Worked with Merchant Technologies Team. Single-handedly worked on adding multi factor authentication in seller central. Designed and implemented a customizable MFA (or 2SV) experience. Also designed Continuous deployment for Seller Registration Systems.</p>
           <hr>
         </div>
-        <div class="w3-container">
+        <div class="w3-container moreJob">
           <h5 class="w3-opacity"><b>Software Development Engineer / Amazon Merchant Technologies</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2015 - Jun 2017</h6>
-          <p>Worked with Merchant Technologies Team on the development of a dynamic, configuration-based framework for data collection. The framework was based on Spring MVC and used Angular JS for client side rendering. Single-handedly worked on the development of the seller registration pipeline for Amazon Fresh for Japan. Single-handedly designed and implemented the v1 of Seller Identity Verification system.</p><br>
+          <p>Worked with Merchant Technologies Team on the development of a dynamic, configuration-based framework for data collection. The framework was based on Spring MVC and used Angular JS for client side rendering. Single-handedly worked on the development of the seller registration pipeline for Amazon Fresh for Japan. Single-handedly designed and implemented the v1 of Seller Identity Verification system.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+            <p id="showLessJobs" class="w3-text-grey w3-center clickable" onclick="showLessJobs()">
+                Show Less
+                <i class="fa fa-angle-up fa-fw"></i>
+            </p>
+            <p id="showMoreJobs" class="w3-text-grey w3-center clickable" onclick="showMoreJobs()">
+                Show More
+                <i class="fa fa-angle-down fa-fw"></i>
+            </p>
         </div>
       </div>
 

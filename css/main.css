@@ -3,3 +3,7 @@
     color: inherit;
     cursor: auto;
 }
+
+.clickable {
+	cursor: pointer;
+}
